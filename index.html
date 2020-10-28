@@ -4,11 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>js</title>
-</head>
+  </head>
 <body>
   <h1>Helllo Javascript</h1>
+  <button id='bt'>클릭</button>
 
-  <!-- <script src="./app.js"></script> -->
-  <script src="./01_variable.js"></script>
+  <script>
+    var bt = document.getElementById('bt')
+    console.log(bt)
+
+    bt.onclick = function() {
+      alert('버튼이 클릭되었습니다.')
+    }
+  </script>
+
+  <script src="./app.js"></script>
+  <!-- <script src="./03_condition.js"></script> -->
+  <!-- <script src="./04_repeat.js"></script> -->
+  <!-- <script src="./05_function.js"></script> -->
+  <!-- <script src="./06_object.js"></script> -->
+  <!-- <script src="./07_class.js"></script> -->
+  <!-- <script src="./08_array.js"></script> -->
+  <!-- <script src="./09_array_api.js"></script> -->
 </body>
 </html>
