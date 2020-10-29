@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js</title>
+</head>
+<body>
+  <form class="form">
+    <input type="text" placeholder="검색어입력">
+  </form>
+
+  <h2 class="word"></h2>
+
+  <SCript>
+    const form = document.querySelector('.form')
+    const input = form.querySelector('input')
+    const word = document.querySelector('.word')
+
+    function searchValue(text) {
+      console.log(text)
+    }
+
+    function handleSubmit(e) {
+      e.preventDefault()
+      const say = input.value
+      word.textContent = say
+      searchValue(say)
+      input.value = ''
+    }
+
+    function init() {
+      form.addEventListener('submit', handleSubmit)
+      }
+
+    init()
+  </SCript>
+</body>
+</html>
