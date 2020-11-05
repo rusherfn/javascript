@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS | Contect</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <h1>logo</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure,
+          repudiandae!
+        </p>
+      </div>
+      <div class="right">
+        <div class="content">
+          <h2>메일 보내기</h2>
+          <form
+            class="gform"
+            method="POST"
+            data-email="example@email.net"
+            action="https://script.google.com/macros/s/AKfycbynDMV2vlKh2jgvNrHfWWJkQdokhv-WAwK-_yvqR1MbKQ0-Fa8/exec"
+          >
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name" placeholder="이름" />
+            <label for="email">이메일</label>
+            <input type="email" id="email" name="email" placeholder="이메일" />
+            <label for="message">내용</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="내용"
+            ></textarea>
+
+            <button type="submit" class="btn">보내기</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- dimm -->
+      <div class="dimm"></div>
+      <!-- modal -->
+      <div class="modal">
+        <span>✨</span>
+        <p>메일이 성공적으로<br />발송되었습니다.</p>
+        <button class="btn close">닫기</button>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
